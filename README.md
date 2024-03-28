@@ -1,2 +1,2 @@
 ## Deployment
- Mini Project [live demo](https://optimizing-seven.vercel.app/)
+ Vercel url [live demo](https://optimizing-seven.vercel.app/)
