@@ -6,7 +6,6 @@ import "@/component/icon/fontAwsome"
 export default function layout({children,}: 
   Readonly<{children: React.ReactNode;
 }>){
-  const [sidebar, setSidebar] =useState(false)
   return (
     <html>
     <body className='flex'>
