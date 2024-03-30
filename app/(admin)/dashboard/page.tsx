@@ -38,7 +38,7 @@ const ProductDetail=(product:ProductType)=>{
     },
     {
       name: 'Image',
-      selector: (row):JSX.Element|any => <img className='w-9 h-9' src={row.image} alt={row.title}/>,
+      selector: (row):JSX.Element|any => <Image className='w-9 h-9' src={row.image} alt={row.title}/>,
     },
     {
       name: 'Category',
@@ -61,7 +61,7 @@ const ProductDetail=(product:ProductType)=>{
         <Modal.Header>Product Details</Modal.Header>
         <Modal.Body>
           <div className="space-y-6">
-            <Image src={productdetail?.image||ImagePlaceHolder} alt={productdetail?.title||"Untitle"} className="w-full h-96 object-fit" />
+            <Image src={productdetail?.image||ImagePlaceHolder} width={500} height={500} alt={productdetail?.title||"Untitle"} className="w-full h-96 object-fit" />
             <p className="text-base leading-relaxed text-gray-500 dark:text-gray-400">
               {productdetail?.description}
             </p>

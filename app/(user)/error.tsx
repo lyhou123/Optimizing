@@ -13,7 +13,7 @@ export default function Error({
   }, [error])
   return (
     <div>
-      <h2>Something went wrong!</h2>
+      <h2 className='text-center text-4xl text-red-600'>Something went wrong!</h2>
       <button
         onClick={
           // Attempt to recover by trying to re-render the segment
