@@ -1,18 +1,24 @@
-import React from 'react'
+'use client'
+import React, { use, useEffect, useState } from 'react'
 import SidebarComponent from '../../component/sidebar/sidebarcomponent';
 import "@/app/globals.css";
-export default function layout({children,}: Readonly<{children: React.ReactNode;
+import "@/component/icon/fontAwsome"
+export default function layout({children,}: 
+  Readonly<{children: React.ReactNode;
 }>){
+  const [sidebar, setSidebar] =useState(false)
   return (
     <html>
-    <body>
-      <aside className="fixed h-screen">
+    <body className='flex'>
+     {/* <MenuIcon  onClick={() => setSidebar(!sidebar)} classname="h-8 w-8 fixed buttom-0" /> */}
+      <aside className=" h-screen lg:block hidden">
         <SidebarComponent/>
       </aside>
-      <main>
+      <main className='flex-1'>
         {children}
       </main>
     </body>
     </html>
   )
 }
+

@@ -10,6 +10,11 @@ import {
   
   export  const MenuList = [
     {
+       name: "Home",
+        path: "/",
+        icon: HiArrowSmRight,
+    },
+    {
       name: "Dashboard",
       path: "/dashboard",
       icon: HiChartPie,
@@ -20,30 +25,20 @@ import {
       icon: HiViewBoards,
     },
     {
-      name: "Inbox",
-      path: "#",
+      name: "About US",
+      path: "/about",
       icon: HiInbox,
       label: "3",
     },
     {
-      name: "Users",
-      path: "#",
+      name: "Contact US",
+      path: "/contact",
       icon: HiUser,
     },
     {
       name: "Products",
       path: "#",
       icon: HiShoppingBag,
-    },
-    {
-      name: "Sign In",
-      path: "#",
-      icon: HiArrowSmRight,
-    },
-    {
-      name: "Sign Up",
-      path: "#",
-      icon: HiTable,
-    },
+    }
   ];
   

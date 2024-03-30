@@ -6,6 +6,7 @@ import Loading from "./loading";
 import { ErrorBoundary } from "next/dist/client/components/error-boundary";
 import Error from "./error";
 import Component from "@/component/page1";
+import FooterComponent from "@/component/footer/footer";
 const inter = Inter({ subsets: ["latin"] });
 export const metadata: Metadata = {
   title: "App",
@@ -23,7 +24,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body className="flex flex-col h-screen justify-between">
       <header>
       <Component/>
       </header>
@@ -32,6 +33,9 @@ export default function RootLayout({
         {children}
       </Suspense>
        </ErrorBoundary>
+       <footer>
+        <FooterComponent/>
+       </footer>
       </body>
     </html>
   );
